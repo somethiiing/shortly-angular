@@ -10,7 +10,7 @@
 
 <!-- Your code here -->
   <input type="text" ng-model="newLink" ng-click="clearField()" placeholder ="Type Link Here!"></input>
-  <button ng-click="addLink(newLink)">Shorten</button>
+  <button ng-click="addLink(newLink)" ngEnter="addLink(newLink)">Shorten</button>
   <p>{{warning}}</p>
 
 </div>

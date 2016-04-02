@@ -19,6 +19,7 @@ var createSha = function (url) {
 LinkSchema.pre('save', function (next) {
   var code = createSha(this.url);
   this.code = code;
+  this.link = this.baseUrl + '/' + this.code;
   next();
 });
 

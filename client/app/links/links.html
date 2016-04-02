@@ -9,5 +9,13 @@
   <hr>
 
   <!-- Your html here -->
-  <div ng-repeat="link in data.links">{{link}}</div>
+  <div class="link" ng-repeat="link in data.links">
+    <a href={{link.link}}>
+      <div>Title: {{link.title}}</div>
+      <div>Original: {{link.url}}</div>
+      <div>Visits: {{link.visits}}</div>
+      <div>Shortened Link: {{link.link}}</div>
+  <hr>
+    </a>
+  </div>
 </div>

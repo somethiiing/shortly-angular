@@ -19,7 +19,7 @@ angular.module('shortly.shorten', [])
           .catch(function(err){
             console.error('Failed to add link: ', err);
           });
-        $scope.newLink = '';
+        $scope.newLink = 'http://';
       } else {
         $scope.warning = 'Not a valid URL.';
       }
@@ -33,3 +33,15 @@ angular.module('shortly.shorten', [])
   }
 
 });
+// .directive('ngEnter', function() {
+//   return function(scope, element, attrs) {
+//     element.bind("keydown keypress", function(event) {
+//       if(event.which === 13) {
+//         scope.$apply(function(){
+//           scope.$eval(attrs.ngEnter);
+//         });
+//         event.preventDefault();
+//       }
+//     });
+//   };
+// });
