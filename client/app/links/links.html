@@ -1,4 +1,13 @@
 <div id='container'>
-  <h1>All Links</h1>
+  <h2>All Links</h2>
+  <hr>
+  <nav>
+    <a href="#/links">All Links</a>
+    <a href="#/shorten">Shorten</a>
+    <a href="#/signin" id="signout" ng-controller="AuthController" ng-click="signout()">Sign Out</a>
+  </nav>
+  <hr>
+
   <!-- Your html here -->
+  <div ng-repeat="link in data.links">{{link}}</div>
 </div>

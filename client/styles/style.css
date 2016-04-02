@@ -6,8 +6,9 @@ body {
 
 a {
   color: #333;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
+  padding-right: 10px;
 }
 
 h1 {
@@ -146,3 +147,6 @@ input[type=url]:focus {
   clear: both;
 }
 
+#signout {
+  float: right;
+}
